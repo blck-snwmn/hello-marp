@@ -1,0 +1,20 @@
+{
+  "name": "hello-marp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:html": "mkdir -p example && cp -f *.jpeg *.jpg *.png example/ 2>/dev/null || : && marp slide.md -o example/slide.html",
+    "build:pdf": "mkdir -p example && marp slide.md --pdf --allow-local-files -o example/slide.pdf",
+    "build:pptx": "mkdir -p example && marp slide.md --pptx --allow-local-files -o example/slide.pptx",
+    "watch": "marp slide.md --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.24.0",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.2.3"
+  }
+}
