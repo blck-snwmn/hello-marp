@@ -7,6 +7,8 @@
     "build:html": "mkdir -p example && cp -f *.jpeg *.jpg *.png example/ 2>/dev/null || : && marp slide.md -o example/slide.html",
     "build:pdf": "mkdir -p example && marp slide.md --pdf --allow-local-files -o example/slide.pdf",
     "build:pptx": "mkdir -p example && marp slide.md --pptx --allow-local-files -o example/slide.pptx",
+    "build:png": "mkdir -p example/png && marp slide.md --images png --allow-local-files -o example/png/slide.png",
+    "build:jpeg": "mkdir -p example/jpeg && marp slide.md --images jpeg --allow-local-files -o example/jpeg/slide.jpeg",
     "watch": "marp slide.md --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
