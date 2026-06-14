@@ -15,11 +15,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.24.0",
+  "packageManager": "pnpm@11.5.3",
   "engines": {
     "node": "22"
   },
   "devDependencies": {
-    "@marp-team/marp-cli": "^4.2.3"
+    "@marp-team/marp-cli": "4.4.0"
   }
 }
