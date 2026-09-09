@@ -110,8 +110,8 @@ importers:
   .:
     devDependencies:
       '@marp-team/marp-cli':
-        specifier: 4.5.0
-        version: 4.5.0
+        specifier: 4.5.1
+        version: 4.5.1
 
 packages:
 
@@ -141,8 +141,8 @@ packages:
     peerDependencies:
       postcss-selector-parser: ^7.0.0
 
-  '@marp-team/marp-cli@4.5.0':
-    resolution: {integrity: sha512-ZOd9eVwxqx1yL6S6OpEkYKnOTeeWbVCSJaOx8e5lUCcA8jGf7NJU2XkDMkvDTk0wvxwhIdda8zriunhau+Gmrg==}
+  '@marp-team/marp-cli@4.5.1':
+    resolution: {integrity: sha512-KwjfXZpABRjSivsHOD0pIsOmODxgQFwc3AHjlnFUKCsSZX5U4erHmm4GWd1K7l2NATLvtrGw29At89Tar/cS4g==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -714,6 +714,18 @@ packages:
       utf-8-validate:
         optional: true
 
+  ws@8.21.3:
+    resolution: {integrity: sha512-201TZ/kPWxoPr/OKWjquZR1SWKXcvxdH+e1xrx89b3YbmzLMFCLfnaG1HFIgWzJOEWZ7MvpK++odZufgYR50Rw==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+
   xss@1.0.15:
     resolution: {integrity: sha512-FVdlVVC67WOIPvfOwhoMETV72f6GbW7aOabBC3WxN/oUdoEMDyLz4OgRv5/gck2ZeNqEQu+Tb0kloovXOfpYVg==}
     engines: {node: '>= 0.10.0'}
@@ -761,7 +773,7 @@ snapshots:
     dependencies:
       postcss-selector-parser: 7.1.4
 
-  '@marp-team/marp-cli@4.5.0':
+  '@marp-team/marp-cli@4.5.1':
     dependencies:
       '@marp-team/marp-core': 4.4.0
       '@marp-team/marpit': 3.2.2
@@ -770,7 +782,7 @@ snapshots:
       puppeteer-core: 24.43.1
       serve-index: 1.9.2
       tmp: 0.2.7
-      ws: 8.21.0
+      ws: 8.21.3
     transitivePeerDependencies:
       - bare-abort-controller
       - bare-buffer
@@ -1352,6 +1364,8 @@ snapshots:
   wrappy@1.0.2: {}
 
   ws@8.21.0: {}
+
+  ws@8.21.3: {}
 
   xss@1.0.15:
     dependencies:
