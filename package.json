@@ -17,7 +17,7 @@
   "license": "ISC",
   "packageManager": "pnpm@12.17.0",
   "engines": {
-    "node": "24"
+    "node": "26"
   },
   "devDependencies": {
     "@marp-team/marp-cli": "4.5.1"
